@@ -6,7 +6,7 @@
 	box-sizing: border-box;
 }
 
-body {
+body{
 	font-family: 'Poppins', sans-serif;
 	height: 100vh;
 	display: flex;
@@ -15,12 +15,11 @@ body {
 	background-position: center;
 	background-size: cover;
 	color: #fff;
+	overflow-y: hidden;
 }
 
 header{
 	position: fixed;
-	/* top: 0;
-	left: 0; */
 	width: 100%;
 	padding: 20px 100px;
 	display: flex;
@@ -38,6 +37,7 @@ h1 {
 }
 
 .container {
+	position: center;
 	display: flex;
 	margin-top: 20px;
 	margin-left: 25%;
@@ -96,7 +96,90 @@ td{
 	height: 50px;
 }
 
-.wrapper .form-box.schedule{
-	width: 100%;
-	height: 100%;
+@media screen and (orientation:portrait) {
+	.container{
+		/* transform: rotate(90deg); */
+		margin-left: 250px;
+		/* margin-top: 200px; */
+	}
+
+	body{
+		transform: rotate(90deg);
+	}
+
+	.counter-container {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		background: transparent;
+		border: 2px solid #fff; 
+		border-radius: 10px;
+		backdrop-filter: blur(5px);
+		color: #fff;
+		margin: 0 5px;
+		text-transform: uppercase;
+	}
+
+	.counter {
+		display: block;
+		font-size: 8px;
+		font-weight: 600;
+	}
+	
+
+	body{
+		font-family: 'Poppins', sans-serif;
+		display: flex;
+		justify-content: center;
+		color: #fff;
+		align-items: center;
+		background-image: url(HOL\ Faker\ Skin\ For\ Phone.png);
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		font-size: 8px;
+		height: 100vh;
+	}
+
+	table{
+		align-items: center;
+		text-align: center;
+		width: 350px;
+		height: 252px;
+		table-layout: fixed;
+		border: 1px solid #fff;
+		border-collapse: collapse;
+		border-radius: 20px;
+	}
+
+	.wrapper{
+		width: 355px;
+		height: 252px;
+		margin-left: 20px;
+		margin-top: 100px;
+		position: relative;
+		background: transparent;
+		border: 2px solid rgba(255, 255, 255, .5);
+		border-radius: 20px;
+		backdrop-filter: blur(5px);
+		box-shadow: 0 0 30px rgba(255, 255, 255, .5);
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+		/* transform: rotate(90deg); */
+	}
+	
+	.wrapper .form-box .schedule{
+		width: 100%;
+		height: 100%;
+	}
+	
+	td{
+		width: 50px;
+		height: 36px;
+	}
 }
