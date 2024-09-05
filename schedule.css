@@ -96,7 +96,7 @@ td{
 	height: 50px;
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-height:600px) {
 	.container{
 		/* transform: rotate(90deg); */
 		margin-left: 250px;
